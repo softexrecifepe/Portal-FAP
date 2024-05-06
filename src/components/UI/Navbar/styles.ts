@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { softexTheme } from "../../css/themes/softexTheme";
-import { reposivityQuery } from "../../css/themes/reposivityQuery";
+import { softexTheme } from "../../../css/themes/softexTheme";
+import { reposivityQuery } from "../../../css/themes/reposivityQuery";
 
 export const NavHeader = styled.header`
   a {

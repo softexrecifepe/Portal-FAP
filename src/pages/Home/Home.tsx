@@ -1,7 +1,12 @@
-interface HomeProps {}
+import fapbackground from "../../assets/images/fapbackground.jpg";
+import BackgroundContainer from "../../components/Elements/BackgroundContainer";
 
-const Home = ({}: HomeProps) => {
-  return <div>Pagina de Home</div>;
+const Home = () => {
+  return (
+    <main>
+      <BackgroundContainer background={fapbackground} />
+    </main>
+  );
 };
 
 export default Home;

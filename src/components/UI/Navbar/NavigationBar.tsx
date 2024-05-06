@@ -1,7 +1,6 @@
 import * as S from "./styles";
 import { Link } from "react-router-dom";
-import softexLogo from "../../assets/images/softexLogo.png";
-
+import softexLogo from "../../../assets/images/softexLogo.png";
 const NavigationBar = ({}) => {
   return (
     <S.NavHeader>
