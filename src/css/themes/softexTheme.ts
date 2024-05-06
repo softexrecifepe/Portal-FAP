@@ -1,4 +1,4 @@
-const ThemeColors = {
+const softexThemeColors = {
   primary: "#dc7c2c",
   secondary: "#ecbc94",
   tertiary: "#FAB400",
@@ -6,46 +6,47 @@ const ThemeColors = {
   background: "#FBAB7E",
 };
 
-const ThemeGradients = {
-  gradient: "linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)",
+const softexThemeGradients = {
+  gradient: "0deg, #fbab7e 0%, #eee7ee 26%",
 };
 
-const TextColors = {
+const softexTextColors = {
   primary: "#f1f1f1",
   secondary: "#333",
 };
 
-const FontSizes = {
+const softexFontSizes = {
   tiny: "10px",
   small: "12px",
-  medium: "15px",
+  medium: "16px",
   large: "18px",
 };
 
-const FontWeights = {
+const softexFontWeights = {
   light: 300,
   regular: 400,
   bold: 700,
 };
 
-const FontFamily = {
+const softexFontFamily = {
   primary: "Titillium Web, sans-serif",
 };
 
-const Spacing = {
+const softexSpacing = {
   small: "5px",
   medium: "10px",
   large: "15px",
+  extraLarge: "20px",
 };
 
-const BorderRadius = {
+const softexBorderRadius = {
   small: "5px",
   medium: "10px",
   large: "15px",
   veryLarge: "20px",
 };
 
-const BoxShadow = {
+const softexBoxShadow = {
   small:
     "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;",
 
@@ -57,21 +58,21 @@ const BoxShadow = {
     "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;",
 };
 
-const ImageSizes = {
+const softexImageSizes = {
   full: "100%",
   half: "50%",
   quarter: "25%",
 };
 
 export const softexTheme = {
-  boxShadow: BoxShadow,
-  borderRadius: BorderRadius,
-  colors: ThemeColors,
-  fontSizes: FontSizes,
-  fontWeights: FontWeights,
-  fontFamily: FontFamily,
-  gradients: ThemeGradients,
-  imageSizes: ImageSizes,
-  spacing: Spacing,
-  textColors: TextColors,
+  boxShadow: softexBoxShadow,
+  borderRadius: softexBorderRadius,
+  colors: softexThemeColors,
+  fontSizes: softexFontSizes,
+  fontWeights: softexFontWeights,
+  fontFamily: softexFontFamily,
+  gradients: softexThemeGradients,
+  imageSizes: softexImageSizes,
+  spacing: softexSpacing,
+  textColors: softexTextColors,
 };
