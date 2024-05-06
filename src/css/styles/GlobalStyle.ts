@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { softexTheme } from "../themes/softexTheme";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -8,7 +9,8 @@ const GlobalStyle = createGlobalStyle`
 
   body{
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(${softexTheme.gradients.gradient});
+    height: 100vh;
   }
 `;
 
