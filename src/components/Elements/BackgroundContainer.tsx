@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { reposivityQuery } from "../../css/themes/reposivityQuery";
+import { softexTheme } from "../../css/themes/softexTheme";
 
 interface ContainerProps {
   children?: React.ReactNode;
@@ -12,25 +13,26 @@ export const StyledContainer = styled.div`
   background-repeat: no-repeat;
   width: 95%;
   border-radius: 0 0 20px 20px;
+  box-shadow: ${softexTheme.boxShadow.extraLarge};
 
   ${reposivityQuery.desktop} {
     display: flex;
     justify-content: center;
-    height: 40vh;
+    height: 50vh;
     margin: 0 auto;
   }
 
   ${reposivityQuery.tablet} {
     display: flex;
     justify-content: center;
-    height: 30vh;
+    height: 40vh;
     margin: 0 auto;
   }
 
   ${reposivityQuery.mobile} {
     display: flex;
     justify-content: center;
-    height: 18vh;
+    height: 25vh;
     margin: 0 auto;
   }
 `;

@@ -8,9 +8,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    font-family: 'Roboto', sans-serif;
+    //font-family: "Ubuntu", sans-serif;
+    //font-family: "Libre Franklin", sans-serif;
+    font-family: "Arimo", sans-serif;
     background-image: linear-gradient(${softexTheme.gradients.gradient});
     height: 100vh;
+    transition: all 0.25s linear;
   }
 `;
 

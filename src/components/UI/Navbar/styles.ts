@@ -6,9 +6,8 @@ export const NavHeader = styled.header`
   a {
     text-decoration: none;
     color: ${softexTheme.textColors.secondary};
+    padding-top: 2px;
   }
-
-  font-size: ${softexTheme.fontSizes.medium};
 
   ${reposivityQuery.desktop} {
     padding: ${softexTheme.spacing.extraLarge};
@@ -18,6 +17,7 @@ export const NavHeader = styled.header`
       gap: 70px;
       align-items: center;
       list-style: none;
+      font-size: ${softexTheme.fontSizes.extraLarge};
       padding: ${softexTheme.spacing.small};
     }
 
@@ -25,7 +25,7 @@ export const NavHeader = styled.header`
       a {
         display: flex;
         img {
-          width: 150px;
+          width: 175px;
         }
       }
     }
@@ -64,7 +64,7 @@ export const NavHeader = styled.header`
       a {
         display: flex;
         img {
-          width: 125px;
+          width: 110px;
         }
       }
     }

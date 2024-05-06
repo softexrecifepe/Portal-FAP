@@ -1,6 +1,8 @@
 import * as S from "./styles";
 import { Link } from "react-router-dom";
 import softexLogo from "../../../assets/images/softexLogo.png";
+import ItemList from "../../Elements/ItemList";
+
 const NavigationBar = ({}) => {
   return (
     <S.NavHeader>
@@ -10,24 +12,24 @@ const NavigationBar = ({}) => {
             <img src={softexLogo} alt="" />
           </a>
         </li>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
+        <ItemList>
+          <Link to="/">FAP</Link>
+        </ItemList>
+        <ItemList>
           <Link to="/about">Sobre</Link>
-        </li>
-        <li>
+        </ItemList>
+        <ItemList>
           <Link to="/editions">Edições</Link>
-        </li>
-        <li>
+        </ItemList>
+        <ItemList>
           <Link to="/projects">Projetos</Link>
-        </li>
-        <li>
+        </ItemList>
+        <ItemList>
           <Link to="/events">Eventos</Link>
-        </li>
-        <li>
+        </ItemList>
+        <ItemList>
           <Link to="/contact">Contato</Link>
-        </li>
+        </ItemList>
       </ul>
     </S.NavHeader>
   );

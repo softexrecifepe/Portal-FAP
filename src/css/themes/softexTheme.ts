@@ -20,6 +20,7 @@ const softexFontSizes = {
   small: "12px",
   medium: "16px",
   large: "18px",
+  extraLarge: "20px",
 };
 
 const softexFontWeights = {
