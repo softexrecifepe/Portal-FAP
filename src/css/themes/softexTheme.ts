@@ -18,7 +18,7 @@ const softexTextColors = {
 const softexFontSizes = {
   tiny: "10px",
   small: "12px",
-  medium: "15px",
+  medium: "16px",
   large: "18px",
 };
 
@@ -36,6 +36,7 @@ const softexSpacing = {
   small: "5px",
   medium: "10px",
   large: "15px",
+  extraLarge: "20px",
 };
 
 const softexBorderRadius = {
