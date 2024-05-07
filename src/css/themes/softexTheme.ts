@@ -20,6 +20,9 @@ const softexFontSizes = {
   small: "12px",
   medium: "16px",
   large: "18px",
+  extraLarge: "20px",
+  veryLarge: "24px",
+  huge: "30px",
 };
 
 const softexFontWeights = {
@@ -37,6 +40,7 @@ const softexSpacing = {
   medium: "10px",
   large: "15px",
   extraLarge: "20px",
+  veryLarge: "20px 45px",
 };
 
 const softexBorderRadius = {
