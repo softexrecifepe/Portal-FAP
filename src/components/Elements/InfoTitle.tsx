@@ -44,7 +44,7 @@ export const StyledInfoTitle = styled.p`
 const InfoTitle = () => {
   return (
     <>
-      <StyledInfoTitle className="hvr-bob">
+      <StyledInfoTitle >
         Fique Por <strong>Dentro</strong>
         <HiCursorClick size={40} color={softexTheme.colors.quaternary} />
       </StyledInfoTitle>

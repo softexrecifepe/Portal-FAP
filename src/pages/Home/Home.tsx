@@ -1,15 +1,17 @@
+//Styles
+import * as S from "./styles";
+
 //Components
-import background from "../../assets/images/background.svg";
-import BackgroundContainer from "../../components/Elements/BackgroundContainer";
+import Carousel from "../../components/UI/Carousel/Carousel";
 
 //Elements
 import InfoTitle from "../../components/Elements/InfoTitle";
+import BackgroundContainer from "../../components/Elements/BackgroundContainer";
+import Container from "../../components/Elements/Container";
 
 //Images
 import softexOffice from "../../assets/images/escritoriosoftexpe.jpg";
-
-//Styles
-import * as S from "./styles";
+import background from "../../assets/images/background.svg";
 
 const Home = () => {
   return (
@@ -35,8 +37,10 @@ const Home = () => {
         </div>
         <img src={softexOffice} alt="ITBC" />
       </S.InfoHomeContent>
-      <InfoTitle/>
-      
+      <InfoTitle />
+      <Container>
+        <Carousel />
+      </Container>
     </main>
   );
 };
