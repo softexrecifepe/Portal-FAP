@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { softexTheme } from "../../css/themes/softexTheme";
 import { reposivityQuery } from "../../css/themes/reposivityQuery";
 
-export const StyledHome = styled.section`
+export const InfoHomeContent = styled.section`
   display: flex;
   justify-content: space-between;
   letter-spacing: 2px;

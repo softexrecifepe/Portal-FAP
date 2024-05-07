@@ -2,6 +2,9 @@
 import background from "../../assets/images/background.svg";
 import BackgroundContainer from "../../components/Elements/BackgroundContainer";
 
+//Elements
+import InfoTitle from "../../components/Elements/InfoTitle";
+
 //Images
 import softexOffice from "../../assets/images/escritoriosoftexpe.jpg";
 
@@ -12,7 +15,7 @@ const Home = () => {
   return (
     <main>
       <BackgroundContainer background={background} />
-      <S.StyledHome>
+      <S.InfoHomeContent>
         <div>
           <span>
             <p>
@@ -31,7 +34,8 @@ const Home = () => {
           </p>
         </div>
         <img src={softexOffice} alt="ITBC" />
-      </S.StyledHome>
+      </S.InfoHomeContent>
+      <InfoTitle/>
     </main>
   );
 };

@@ -18,7 +18,7 @@ export const StyledContainer = styled.div`
   ${reposivityQuery.desktop} {
     display: flex;
     justify-content: center;
-    height: 50vh;
+    height: 65vh;
     margin: 0 auto;
   }
 
