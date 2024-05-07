@@ -3,6 +3,14 @@ import { softexTheme } from "../../../css/themes/softexTheme";
 import { reposivityQuery } from "../../../css/themes/reposivityQuery";
 
 export const NavHeader = styled.header`
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1  ;
+
+  background-color: #ffffff80;
+  // box-shadow: ${softexTheme.boxShadow.small};
+
   a {
     text-decoration: none;
     color: ${softexTheme.textColors.secondary};
@@ -56,7 +64,7 @@ export const NavHeader = styled.header`
       justify-content: space-between;
       align-items: center;
       list-style: none;
-      font-size: ${softexTheme.fontSizes.medium};
+      font-size: ${softexTheme.fontSizes.small};
       padding: ${softexTheme.spacing.small};
     }
 
@@ -64,7 +72,7 @@ export const NavHeader = styled.header`
       a {
         display: flex;
         img {
-          width: 110px;
+          width: 90px;
         }
       }
     }

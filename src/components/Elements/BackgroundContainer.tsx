@@ -27,6 +27,7 @@ export const StyledContainer = styled.div`
     justify-content: center;
     height: 40vh;
     margin: 0 auto;
+    background-position: 84% 15%;
   }
 
   ${reposivityQuery.mobile} {
@@ -34,6 +35,7 @@ export const StyledContainer = styled.div`
     justify-content: center;
     height: 25vh;
     margin: 0 auto;
+    background-position: 87% 15%;
   }
 `;
 
