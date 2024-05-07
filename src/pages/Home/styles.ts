@@ -10,7 +10,7 @@ export const InfoHomeContent = styled.section`
   color: ${softexTheme.textColors.secondary};
 
   span {
-    p { 
+    p {
       letter-spacing: 4px;
       font-size: ${softexTheme.fontSizes.veryLarge};
       strong {
@@ -37,7 +37,8 @@ export const InfoHomeContent = styled.section`
     }
 
     img {
-      max-width: 300px;
+      max-width: 450px;
+      max-height: 500px;
       border-radius: 20px;
     }
   }
@@ -52,8 +53,9 @@ export const InfoHomeContent = styled.section`
     }
 
     img {
-      width: ${softexTheme.imageSizes.full};
       border-radius: 20px;
+      max-height: 500px;
+      width: ${softexTheme.imageSizes.full};
     }
   }
 

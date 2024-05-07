@@ -1,17 +1,9 @@
-import styled from "styled-components";
-
 interface ItemListProps {
   children: React.ReactNode;
 }
 
-const StyledItemList = styled.li``;
-
 const ItemList = ({ children }: ItemListProps) => {
-  return (
-    <StyledItemList className="hvr-overline-from-center">
-      {children}
-    </StyledItemList>
-  );
+  return <li className="hvr-overline-from-center">{children}</li>;
 };
 
 export default ItemList;

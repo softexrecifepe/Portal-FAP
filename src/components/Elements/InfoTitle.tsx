@@ -3,7 +3,6 @@ import { softexTheme } from "../../css/themes/softexTheme";
 import { reposivityQuery } from "../../css/themes/reposivityQuery";
 import { HiCursorClick } from "react-icons/hi";
 
-
 export const StyledInfoTitle = styled.p`
   letter-spacing: 2px;
   display: flex;
@@ -22,12 +21,6 @@ export const StyledInfoTitle = styled.p`
     strong {
       color: ${softexTheme.colors.primary};
     }
-
-    hr {
-      width: 100%;
-      border: 2px solid ${softexTheme.colors.primary};
-      margin-top: ${softexTheme.spacing.medium};
-    }
   }
 
   ${reposivityQuery.tablet} {
@@ -36,21 +29,14 @@ export const StyledInfoTitle = styled.p`
     strong {
       color: ${softexTheme.colors.primary};
     }
-    hr {
-      border: 1px solid ${softexTheme.colors.primary};
-      margin-top: ${softexTheme.spacing.medium};
-    }
   }
 
   ${reposivityQuery.mobile} {
+    justify-content: center;
     font-size: ${softexTheme.fontSizes.medium};
     margin: ${softexTheme.spacing.large};
     strong {
       color: ${softexTheme.colors.primary};
-    }
-    hr {
-      border: 1px solid ${softexTheme.colors.primary};
-      margin-top: ${softexTheme.spacing.medium};
     }
   }
 `;
@@ -62,7 +48,6 @@ const InfoTitle = () => {
         Fique Por <strong>Dentro</strong>
         <HiCursorClick size={40} color={softexTheme.colors.quaternary} />
       </StyledInfoTitle>
-      <hr />
     </>
   );
 };

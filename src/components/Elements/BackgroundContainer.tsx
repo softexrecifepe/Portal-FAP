@@ -14,12 +14,14 @@ export const StyledContainer = styled.div`
   width: 95%;
   border-radius: 0 0 20px 20px;
   box-shadow: ${softexTheme.boxShadow.extraLarge};
+  
 
   ${reposivityQuery.desktop} {
     display: flex;
     justify-content: center;
     height: 65vh;
     margin: 0 auto;
+    background-position: 87% 15%;
   }
 
   ${reposivityQuery.tablet} {

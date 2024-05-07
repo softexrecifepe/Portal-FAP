@@ -36,6 +36,7 @@ const Home = () => {
         <img src={softexOffice} alt="ITBC" />
       </S.InfoHomeContent>
       <InfoTitle/>
+      
     </main>
   );
 };
