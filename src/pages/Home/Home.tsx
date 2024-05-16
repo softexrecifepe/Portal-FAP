@@ -46,16 +46,17 @@ const Home = () => {
       <Container>
         <Carousel />
       </Container>
-      <C.StyledContainerCard>
+      <Container row="column" justify="space-around" wrap="wrap">
         {cardLabels.map((card) => (
           <Card
             key={card.id}
             image={card.image}
             title={card.tile}
             description={card.description}
+            urlToCourse={card.courseUrl}
           />
         ))}
-      </C.StyledContainerCard>
+      </Container>
     </main>
   );
 };

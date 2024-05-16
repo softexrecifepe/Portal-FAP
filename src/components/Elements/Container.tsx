@@ -5,18 +5,23 @@ interface ContainerProps {
   children: React.ReactNode;
   row?: string;
   wrap?: string;
+  justify?: string;
+  align?: string;
 }
 
 export const StyledContainer = styled.div`
   padding: ${softexTheme.spacing.large};
 `;
 
-const Container = ({ children, row, wrap }: ContainerProps) => {
+const Container = ({ children, row, wrap, justify, align }: ContainerProps) => {
   return (
     <StyledContainer
       style={{
-        display: row ? "flex" : "block",
+        display: "flex",
+        flexDirection: row ? "row" : "column",
         flexWrap: wrap ? "wrap" : "nowrap",
+        justifyContent: justify || "",
+        alignItems: align || "",
       }}
     >
       {children}
