@@ -1,8 +1,10 @@
 //Styles
 import * as S from "./styles";
+import * as C from "../../components/UI/Card/styles";
 
 //Components
 import Carousel from "../../components/UI/Carousel/Carousel";
+import Card from "../../components/UI/Card/Card";
 
 //Elements
 import InfoTitle from "../../components/Elements/InfoTitle";
@@ -12,6 +14,9 @@ import Container from "../../components/Elements/Container";
 //Images
 import softexOffice from "../../assets/images/escritoriosoftexpe.jpg";
 import background from "../../assets/images/background.svg";
+
+//placeholders
+import { cardLabels } from "../../components/UI/Card/Labels";
 
 const Home = () => {
   return (
@@ -41,6 +46,16 @@ const Home = () => {
       <Container>
         <Carousel />
       </Container>
+      <C.StyledContainerCard>
+        {cardLabels.map((card) => (
+          <Card
+            key={card.id}
+            image={card.image}
+            title={card.tile}
+            description={card.description}
+          />
+        ))}
+      </C.StyledContainerCard>
     </main>
   );
 };
