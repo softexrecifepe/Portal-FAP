@@ -3,35 +3,50 @@ import { softexTheme } from "../../../css/themes/softexTheme";
 import { reposivityQuery } from "../../../css/themes/reposivityQuery";
 
 export const StyledCard = styled.section`
-  border-radius: 8px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: ${softexTheme.spacing.medium};
+  box-shadow: ${softexTheme.boxShadow.medium};
+  //padding: ${softexTheme.spacing.medium};
   margin: ${softexTheme.spacing.medium} 0;
-  width: 300px;
+  border-radius: ${softexTheme.borderRadius.veryLarge};
+  //background-color: ${softexTheme.colors.primary};
 
-  ${reposivityQuery.tablet} {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1,
+  p {
+    padding: ${softexTheme.spacing.medium};
+  }
+
+  ${reposivityQuery.desktop} {
     width: 30%;
   }
 
-  ${reposivityQuery.mobile} {
-    width: 100%;
+  ${reposivityQuery.tablet} {
+    width: 85%;
   }
 
-  div {
-    img {
+  ${reposivityQuery.mobile} {
+    width: 75%;
+  }
+
+  img {
+    border-radius: ${softexTheme.borderRadius.veryLarge}
+      ${softexTheme.borderRadius.veryLarge} 0 0;
+    box-shadow: ${softexTheme.boxShadow.medium};
+
+    ${reposivityQuery.desktop} {
       width: 100%;
-      height: 200px;
+      height: 250px;
       object-fit: cover;
-      border-radius: 8px;
+    }
+
+    ${reposivityQuery.mobile} {
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
     }
   }
 `;
-
-export const StyledContainerCard = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: ${softexTheme.spacing.large};
-  margin: 0 auto;
-  max-width: 1200px;
-`
