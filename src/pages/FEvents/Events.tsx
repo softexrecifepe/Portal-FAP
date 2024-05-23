@@ -1,11 +1,14 @@
+import Card from "../../components/UI/Card/Card";
+import * as S from "./styles";
 
-interface EventsProps {}
-
-const Events = ({}: EventsProps) => {
-  return <div>
-    <h1>Eventos</h1>
-    <p>Esta es la página de eventos</p>
-  </div>;
+const Events = () => {
+  return (
+    <S.StyledcardComponent>
+      <Card />
+      <Card />
+      <Card />
+    </S.StyledcardComponent>
+  );
 };
 
 export default Events;
