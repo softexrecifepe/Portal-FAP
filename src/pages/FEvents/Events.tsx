@@ -1,15 +1,14 @@
-import { styled } from "styled-components";
+import Card from "../../components/UI/Card/Card";
+import * as S from "./styles";
 
-interface EventsProps {}
-
-const StyledEventsPage = styled.section`
-  height: 100vh;
-`;
-
-const Events = ({}: EventsProps) => {
-  return <StyledEventsPage>
-   
-  </StyledEventsPage>;
+const Events = () => {
+  return (
+    <S.StyledcardComponent>
+      <Card />
+      <Card />
+      <Card />
+    </S.StyledcardComponent>
+  );
 };
 
 export default Events;
